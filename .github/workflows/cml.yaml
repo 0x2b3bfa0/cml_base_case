@@ -1,4 +1,6 @@
 on: [push, pull_request]
+env:
+  GITHUB_TOKEN: ${{ github.token }}
 jobs:
   run:
     runs-on: ubuntu-latest
